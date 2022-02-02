@@ -35,9 +35,9 @@
  * 5. Créez une instance de Appartement et invoquez toutes les méthodes définies, y compris les setters ( dans index.php ).
  */
 
-require './Classes/Appartement.php';
-require './Classes/Habitation.php';
-require  './Classes/Maison.php';
+include 'Classes/Appartement.php';
+require 'Classes/Habitation.php';
+require  'Classes/Maison.php';
 
 $maison1 = new Maison('Belgique', 'Momignies', 6590, 3, 4, true, 1, false);
 echo  $maison1-> getPays();

@@ -1,11 +1,11 @@
 <?php
 
 class Habitation {
-    protected String $pays = "Belgique";
-    protected String $ville = "Momignies";
-    protected int $codePostal = 6590;
-    protected int $chambres = 3;
-    protected int $pieces = 4;
+    protected String $pays;
+    protected String $ville;
+    protected int $codePostal;
+    protected int $chambres;
+    protected int $pieces;
 
     public function __construct(string $pays, string $ville, int$codePostal, int $chambres, int $pieces)
     {
