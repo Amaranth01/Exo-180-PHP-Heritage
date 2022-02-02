@@ -34,3 +34,42 @@
  *
  * 5. Créez une instance de Appartement et invoquez toutes les méthodes définies, y compris les setters ( dans index.php ).
  */
+
+require './Classes/Appartement.php';
+require './Classes/Habitation.php';
+require  './Classes/Maison.php';
+
+$maison1 = new Maison('Belgique', 'Momignies', 6590, 3, 4, true, 1, false);
+echo  $maison1-> getPays();
+echo  $maison1-> getVille();
+echo  $maison1-> getCodePostal();
+echo  $maison1-> getChambres();
+echo  $maison1-> getPieces();
+echo  $maison1-> isJardin();
+echo $maison1-> getEtage();
+echo $maison1 -> isGarage();
+
+$maison2 = new Maison('France', 'Bourg-en-Bresse', 01000, 3, 5, true, 1, true);
+echo  $maison2-> getPays();
+echo  $maison2-> getVille();
+echo  $maison2-> getCodePostal();
+echo  $maison2-> getChambres();
+echo  $maison2-> getPieces();
+echo  $maison2-> isJardin();
+echo $maison2-> getEtage();
+echo $maison2 -> isGarage();
+
+$appartement = new Appartement('France', 'Mâcon', 71000, 3, 6, false);
+echo  $appartement-> getPays();
+echo  $appartement-> getVille();
+echo  $appartement-> getCodePostal();
+echo  $appartement-> getChambres();
+echo  $appartement-> getPieces();
+echo $appartement -> isGarage();
+
+$appartement->setGarage(false);
+$appartement->setCodePostal(01000);
+$appartement->setVille("Bourg-en-Bresse");
+$appartement->setPays("France");
+$appartement->setChambres(3);
+$appartement->setPieces(6);
