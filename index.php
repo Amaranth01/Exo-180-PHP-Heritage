@@ -35,37 +35,41 @@
  * 5. Créez une instance de Appartement et invoquez toutes les méthodes définies, y compris les setters ( dans index.php ).
  */
 
-include 'Classes/Appartement.php';
 require 'Classes/Habitation.php';
-require  'Classes/Maison.php';
+require 'Classes/Maison.php';
+require  'Classes/Appartement.php';
 
 $maison1 = new Maison('Belgique', 'Momignies', 6590, 3, 4, true, 1, false);
-echo  $maison1-> getPays();
-echo  $maison1-> getVille();
-echo  $maison1-> getCodePostal();
-echo  $maison1-> getChambres();
-echo  $maison1-> getPieces();
-echo  $maison1-> isJardin();
-echo $maison1-> getEtage();
-echo $maison1 -> isGarage();
+echo  $maison1-> getPays()."<br>";
+echo  $maison1-> getVille()."<br>";
+echo  $maison1-> getCodePostal()."<br>";
+echo  $maison1-> getChambres()."<br>";
+echo  $maison1-> getPieces()."<br>";
+echo  $maison1-> isJardin()."<br>";
+echo $maison1-> getEtage()."<br>";
+echo $maison1 -> isGarage()."<br>";
+
+echo "<br><br>";
 
 $maison2 = new Maison('France', 'Bourg-en-Bresse', 01000, 3, 5, true, 1, true);
-echo  $maison2-> getPays();
-echo  $maison2-> getVille();
-echo  $maison2-> getCodePostal();
-echo  $maison2-> getChambres();
-echo  $maison2-> getPieces();
-echo  $maison2-> isJardin();
-echo $maison2-> getEtage();
-echo $maison2 -> isGarage();
+echo  $maison2-> getPays()."<br>";
+echo  $maison2-> getVille()."<br>";
+echo  $maison2-> getCodePostal()."<br>";
+echo  $maison2-> getChambres()."<br>";
+echo  $maison2-> getPieces()."<br>";
+echo  $maison2-> isJardin()."<br>";
+echo $maison2-> getEtage()."<br>";
+echo $maison2 -> isGarage()."<br>";
+
+echo "<br><br>";
 
 $appartement = new Appartement('France', 'Mâcon', 71000, 3, 6, false);
-echo  $appartement-> getPays();
-echo  $appartement-> getVille();
-echo  $appartement-> getCodePostal();
-echo  $appartement-> getChambres();
-echo  $appartement-> getPieces();
-echo $appartement -> isGarage();
+echo  $appartement-> getPays()."<br>";
+echo  $appartement-> getVille()."<br>";
+echo  $appartement-> getCodePostal()."<br>";
+echo  $appartement-> getChambres()."<br>";
+echo  $appartement-> getPieces()."<br>";
+echo $appartement -> isGarage()."<br>";
 
 $appartement->setGarage(false);
 $appartement->setCodePostal(01000);

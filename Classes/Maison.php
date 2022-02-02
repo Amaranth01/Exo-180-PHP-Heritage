@@ -11,6 +11,7 @@
          parent::__construct($pays, $ville, $codePostal, $chambres, $pieces);
 
         $this->setJardin($jardin);
+        $this ->setEtage($etage);
         $this->setGarage($garage);
      }
 
